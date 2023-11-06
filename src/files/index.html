@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Apostas</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #contents-index{
+            width: 600px;
+            display: flex;
+            background-color: cadetblue;
+            margin: 0 auto;
+            border-radius: 10px;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: blanchedalmond;
+        }
+        p{
+            color: azure;
+            margin-top: 5px;
+            font-size: larger;
+        }
+        #name{
+            width: 300px;
+            height: 35px;
+            display: block;
+            margin: 10px;
+        }
+        button:hover{
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+        button{
+            width: 50px;
+            height: 30px;
+            margin-left: 10px;
+            margin-bottom: 5px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div id="contents-index">
+        <h1>Gerador de apostas</h1>
+        <p>gera numeros automaticos</p>
+        <form action="/" method="get">
+            <input type="number" name="nu" id="name" min="4" max="100" required placeholder="Quantidade de apostas entre 4-100...">
+            <button type="submit">enviar</button>
+        </form>
+    </div>
+</body>
+</html>
